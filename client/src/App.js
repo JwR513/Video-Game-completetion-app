@@ -1,13 +1,15 @@
 import React from 'react'
-import router from '../../routes'
 import './App.css'
-import { Routes, route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import Home from './components/home'
+import GameCompletionList from './components/gcl'
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route />
+        <Route path="/" element={<Home />} />
+        <Route path="/gameList" element={<GameCompletionList />} />
       </Routes>
     </div>
   )
