@@ -6,9 +6,9 @@ router.get('/', (req, res) => res.send('this is the root'))
 
 // router.put('/', updateStatus)
 
-// router.get('/', getGames)
+router.get('/games', controllers.getGames)
 
-router.post('/games', controllers.createGame)
+router.post('/gameForm', controllers.createGame)
 
 // router.delete('/', deleteGame)
 
