@@ -1,14 +1,15 @@
 const { Router } = require('express')
+const controllers = require('../controllers')
 const router = Router()
 
 router.get('/', (req, res) => res.send('this is the root'))
 
-router.put('/', updateStatus)
+// router.put('/', updateStatus)
 
-router.get('/', getGames)
+// router.get('/', getGames)
 
-router.post('/', createGame)
+router.post('/games', controllers.createGame)
 
-router.delete('/', deleteGame)
+// router.delete('/', deleteGame)
 
 module.exports = router
