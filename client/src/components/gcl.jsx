@@ -1,5 +1,20 @@
 import { Link } from "react-router-dom"
-export default function GameCompletionList(props){
+import Games from "./games"
+import { useEffect, useState } from "react"
+import axios from 'axios'
+
+export default function GameCompletionList(){
+
+const [games, setGames] = useState([])
+
+  useEffect(()=>{
+    async function getlist(){
+      const gameInfo = await axios.get(`http://localhost:3001/api/games`)
+      setGames(gameInfo.data.games)
+    }
+    getlist()
+  }, [])
+
   return(
     <div>
       <nav className="navBar">
@@ -8,13 +23,11 @@ export default function GameCompletionList(props){
       <div className="content">
         <h2>Game List</h2>
         <div className="games">
-          <section>
-            <h3>Title:{props.name}</h3>
-            <h3>Developer:{props.dev}</h3>
-            <h4>Genre: {props.genre}</h4>
-            <h4>Completion Status: {props.status}
-            </h4>
-          </section>
+          {games.map((game) =>( 
+          <Games key={game.name} name={game.name} genre={game.genre} dev={game.developer}
+          status={game.completion} />  
+          ))}
+        
         </div>
       </div>
     </div>

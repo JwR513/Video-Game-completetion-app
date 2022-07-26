@@ -4,11 +4,12 @@ const router = Router()
 
 router.get('/', (req, res) => res.send('this is the root'))
 
-// router.put('/', updateStatus)
+router.delete('/deleteMe', controllers.deleteGame)
+// router.put('/statusUpdate', controllers.updateStatus)
 
 router.get('/games', controllers.getGames)
 
-router.post('/gameForm', controllers.createGame)
+router.post('/games', controllers.createGame)
 
 // router.delete('/', deleteGame)
 

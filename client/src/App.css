@@ -48,7 +48,7 @@ body{
 url("https://img.freepik.com/free-vector/organic-flat-gamer-room-illustration_23-2148920342.jpg?w=1380&t=st=1658770703~exp=1658771303~hmac=67b24d2c074fa3b911ff08c93fd058bf68c20ac0a799a69432839a1808660397");
 
 }
-h2{
+h2, p{
   color: white
   ;
 }
@@ -73,6 +73,12 @@ h2{
 section{
   margin: 25px;
 }
+#newGameSect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 a{
   color: white;
   text-decoration: none;
