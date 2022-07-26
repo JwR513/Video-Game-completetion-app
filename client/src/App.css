@@ -83,7 +83,7 @@ a{
   color: white;
   text-decoration: none;
   margin: 15px;
-  float: right;
+  float: left;
 }
 a:hover{
   text-decoration: underline;

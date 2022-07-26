@@ -18,7 +18,8 @@ const [games, setGames] = useState([])
   return(
     <div>
       <nav className="navBar">
-        <Link to='/'>Home</Link>
+        <Link to='/' id="home">Home</Link>
+        <Link to='/gameForm' >New Game</Link>
       </nav>
       <div className="content">
         <h2>Game List</h2>
