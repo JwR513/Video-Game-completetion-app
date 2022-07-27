@@ -35,8 +35,6 @@ const handleSubmit = async(e)=>{
   .catch(function (error) {
     console.log(error);
   });
-  console.log(res)
-  
   setCompletion('')
   setDev('')
   setGenre('')

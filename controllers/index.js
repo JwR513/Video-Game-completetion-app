@@ -40,7 +40,7 @@ const getGames = async (req, res) => {
 
 const deleteGame = async (req, res) => {
   try {
-    const deleted = await Game.findOneAndDelete(req)
+    const deleted = await Game.findOneAndDelete(req.body)
     if (deleted) {
       return res.status(200).send('Game deleted')
     }
