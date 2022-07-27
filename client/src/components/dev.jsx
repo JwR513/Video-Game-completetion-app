@@ -1,10 +1,6 @@
-import { PromiseProvider } from "mongoose";
 
 export default function DevDev(props){
-  if(props.dev == ''){
-    return (
-      <h3></h3>
-    )
+  if(props.dev === ''){
   }else {
     return(
       <h3>Developer: {props.dev}</h3>

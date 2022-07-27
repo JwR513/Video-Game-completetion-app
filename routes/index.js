@@ -4,13 +4,12 @@ const router = Router()
 
 router.get('/', (req, res) => res.send('this is the root'))
 
-router.delete('/deleteMe', controllers.deleteGame)
-// router.put('/statusUpdate', controllers.updateStatus)
+router.delete('/deleteMe/:id', controllers.deleteGame)
+
+router.put('/games/:id', controllers.updateStatus)
 
 router.get('/games', controllers.getGames)
 
 router.post('/games', controllers.createGame)
-
-// router.delete('/', deleteGame)
 
 module.exports = router

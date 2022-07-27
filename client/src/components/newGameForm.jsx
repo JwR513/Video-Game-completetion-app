@@ -28,7 +28,7 @@ const handleSubmit = async(e)=>{
     completion: completion,
     developer: dev
   }
-  let res = await axios.post('http://localhost:3001/api/games', gameData)
+await axios.post('http://localhost:3001/api/games', gameData)
   .then(function (response) {
     console.log(response);
   })

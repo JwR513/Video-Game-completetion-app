@@ -21,26 +21,20 @@ const getGames = async (req, res) => {
     return res.status(500).send(error.message)
   }
 }
-// const updateStatus = async (req, res) => {
-//   try {
-
-//     await Game.findOneAndUpdate(req,{$set:{completion:`${}`}}{ new: true }, (err, game) => {
-//       if (err) {
-//         res.status(500).send(err)
-//       }
-//       if (!game) {
-//         res.status(500).send('Game not found!')
-//       }
-//       return res.status(200).json(game)
-//     })
-//   } catch (error) {
-//     return res.status(500).send(error.message)
-//   }
-// }
+const updateStatus = async (req, res) => {
+  try {
+    let updatedGame = await Game.findOneAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.send(updatedGame)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
 
 const deleteGame = async (req, res) => {
   try {
-    const deleted = await Game.findOneAndDelete(req.body)
+    const deleted = await Game.findOneAndDelete(req.params.id, req.body)
     if (deleted) {
       return res.status(200).send('Game deleted')
     }
@@ -53,5 +47,6 @@ const deleteGame = async (req, res) => {
 module.exports = {
   createGame,
   getGames,
-  deleteGame
+  deleteGame,
+  updateStatus
 }

@@ -13,6 +13,7 @@ const [games, setGames] = useState([])
       setGames(gameInfo.data.games)
     }
     getlist()
+    
   }, [])
 
   return(
@@ -25,8 +26,7 @@ const [games, setGames] = useState([])
         <h2>Game List</h2>
         <div className="games">
           {games.map((game) =>( 
-          <Games key={game.name} name={game.name} genre={game.genre} dev={game.developer}
-          status={game.completion} />  
+          <Games key={game._id} game={game}/>  
           ))}
         
         </div>
