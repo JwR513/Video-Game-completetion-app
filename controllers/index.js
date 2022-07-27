@@ -23,9 +23,13 @@ const getGames = async (req, res) => {
 }
 const updateStatus = async (req, res) => {
   try {
-    let updatedGame = await Game.findOneAndUpdate(req.params.id, req.body, {
-      new: true
-    })
+    let updatedGame = await Game.findOneAndUpdate(
+      { _id: req.params.id },
+      req.body,
+      {
+        new: true
+      }
+    )
     res.send(updatedGame)
   } catch (error) {
     return res.status(500).send(error.message)
@@ -34,7 +38,10 @@ const updateStatus = async (req, res) => {
 
 const deleteGame = async (req, res) => {
   try {
-    const deleted = await Game.findOneAndDelete(req.params.id, req.body)
+    const deleted = await Game.findOneAndDelete(
+      { _id: req.params.id },
+      req.body
+    )
     if (deleted) {
       return res.status(200).send('Game deleted')
     }
