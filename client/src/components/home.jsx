@@ -6,6 +6,7 @@ export default function Home(){
       <nav className="navBar">
       <Link to='/gameList'>Game List</Link>
       <Link to='/gameForm'>New Game</Link>
+      <Link to='/devList'>Dev List</Link>
       </nav>
       <h2>Welcome to the Video game completion tracker</h2>
     </div>
