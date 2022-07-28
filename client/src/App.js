@@ -5,6 +5,7 @@ import Home from './components/home'
 import GameCompletionList from './components/gcl'
 import NewGameForm from './components/newGameForm'
 import DevList from './components/dcl'
+import NewDevForm from './components/newDevFomr'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/gameList" element={<GameCompletionList />} />
         <Route path="/devList" element={<DevList />} />
         <Route path="/gameForm" element={<NewGameForm />} />
+        <Route path="/devForm" element={<NewDevForm />} />
       </Routes>
     </div>
   )
