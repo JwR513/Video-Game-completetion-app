@@ -21,7 +21,8 @@ const [devs, setDevs] = useState([])
     <div>
       <nav className="navBar">
         <Link to='/' id="home">Home</Link>
-        <Link to='/gameForm' >New Game</Link>
+        <Link to='/gameList' >Game List</Link>
+        <Link to='/devForm'>New Dev</Link>
       </nav>
       <div className="content">
         <h2>Developer  List</h2>
