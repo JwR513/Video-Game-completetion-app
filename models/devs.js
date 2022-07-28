@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const Dev = new Schema(
   {
     studioName: { type: String, required: true },
-    gameCount: { type: Number, required: true }
+    ceoName: { type: String, required: true }
   },
   { timestamps: true }
 )

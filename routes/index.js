@@ -10,6 +10,10 @@ router.put('/games/:id', controllers.updateStatus)
 
 router.get('/games', controllers.getGames)
 
+router.get('/devs', controllers.getDevs)
+
+router.post('/devs', controllers.createDev)
+
 router.post('/games', controllers.createGame)
 
 module.exports = router

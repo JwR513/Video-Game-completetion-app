@@ -1,5 +1,5 @@
 const Game = require('../models/games')
-
+const Dev = require('../models/devs')
 const createGame = async (req, res) => {
   try {
     const game = await new Game(req.body)
@@ -7,6 +7,18 @@ const createGame = async (req, res) => {
 
     return res.status(201).json({
       game
+    })
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
+  }
+}
+const createDev = async (req, res) => {
+  try {
+    const dev = await new Dev(req.body)
+    await dev.save()
+
+    return res.status(201).json({
+      dev
     })
   } catch (error) {
     return res.status(500).json({ error: error.message })
@@ -21,6 +33,15 @@ const getGames = async (req, res) => {
     return res.status(500).send(error.message)
   }
 }
+const getDevs = async (req, res) => {
+  try {
+    const devs = await Dev.find()
+    return res.status(200).json({ devs })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 const updateStatus = async (req, res) => {
   try {
     let updatedGame = await Game.findOneAndUpdate(
@@ -55,5 +76,7 @@ module.exports = {
   createGame,
   getGames,
   deleteGame,
-  updateStatus
+  updateStatus,
+  getDevs,
+  createDev
 }
