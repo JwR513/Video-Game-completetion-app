@@ -36,6 +36,7 @@ await axios.post('http://localhost:3001/api/devs', devData)
         <Link to='/'>Home</Link>
         <Link to='/gameList'>Game List</Link>
         <Link to='/gameForm'>New Game</Link>
+        <Link to='devList'>Dev List</Link>
       </nav>
       <h2>Create a New Developer</h2>
       <p>Create a new Developer so you can look at developers you are interested in and find games they've made</p>
