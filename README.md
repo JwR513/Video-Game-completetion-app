@@ -51,6 +51,10 @@
 
 ![Image](https://i.imgur.com/1v7pof3.png)
 
+#### Game List page
+
+![Image](https://i.imgur.com/vuVkl2J.png)
+
 ### **_Future Updates_**
 
 ### **_Credits_**
