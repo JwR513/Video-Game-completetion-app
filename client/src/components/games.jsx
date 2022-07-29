@@ -35,8 +35,8 @@ console.log(res)
       <h3>Title: {props.game.name}</h3>
       <DevDev dev={props.game.developer}/>
       <h4>Genre:  {props.game.genre}</h4>
-      <p>Completion Status: {props.game.completion}
-      </p>
+      <h4>Completion Status: {props.game.completion}
+      </h4>
       <input type="text" placeholder="Completetion status" onChange={handleChange} />
       <button onClick={handleClick} >Submit</button>
     </section>

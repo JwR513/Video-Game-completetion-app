@@ -49,13 +49,9 @@ url("https://img.freepik.com/free-vector/organic-flat-gamer-room-illustration_23
 
 }
 
-#img-2{
-height: 20%;
-width: 40%;
-}
 h2, p{
-  color: white
-  ;
+  color: white;
+  font-family: 'Square Peg', cursive;
 }
 .navBar{
   background-color: black;
