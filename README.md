@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-#### An application that allows you to track 1 or multiple Video games that you put into it and the completion of said video games whether that be not started, in progress , or complete.
+#### An application that allows you to track 1 or multiple Video games that you put into it and the completion of said video games whether that be not started, in progress , or complete. Also allows you to add and see developers you may want to look into in the future
 
 ---
 
@@ -42,6 +42,10 @@
 ##### Project deployed url will go here
 
 ### **_Screenshots_**
+
+#### Home Page
+
+![Image](https://i.imgur.com/6HKQTn3.png)
 
 ### **_Future Updates_**
 
