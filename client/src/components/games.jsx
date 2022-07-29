@@ -30,7 +30,7 @@ console.log(res)
 
   return(
 <div>
-    <section>
+    <section className='single-box'>
       <button onClick={deleteOne}>Delete</button>
       <h3>Title: {props.game.name}</h3>
       <DevDev dev={props.game.developer}/>
