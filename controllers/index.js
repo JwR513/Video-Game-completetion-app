@@ -56,7 +56,7 @@ const updateStatus = async (req, res) => {
     return res.status(500).send(error.message)
   }
 }
-
+//https://stackoverflow.com/questions/57447089/put-method-with-axios-on-front-end-vue-changing-wrong-id this stackoverflow post helped me fix id grabbing issues i was having with my delete and put requests
 const deleteGame = async (req, res) => {
   try {
     const deleted = await Game.findOneAndDelete(
