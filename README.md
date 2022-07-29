@@ -41,6 +41,8 @@
 
 ##### Project deployed url will go here
 
+---
+
 ### **_Screenshots_**
 
 #### Home Page
@@ -55,6 +57,10 @@
 
 ![Image](https://i.imgur.com/vuVkl2J.png)
 
+---
+
 ### **_Future Updates_**
+
+##### No future updates as of now but may decided to add some stuff in the future
 
 ### **_Credits_**
