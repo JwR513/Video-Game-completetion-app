@@ -4,7 +4,7 @@
 
 ### By: Johnathan R Weil
 
-#### (GitHub)[https://github.com/JwR513] (LinkedIn)[https://www.linkedin.com/in/johnathan-weil-69b100229/]
+#### [GitHub](https://github.com/JwR513) | [LinkedIn](https://www.linkedin.com/in/johnathan-weil-69b100229/)
 
 ---
 
