@@ -47,6 +47,10 @@
 
 ![Image](https://i.imgur.com/6HKQTn3.png)
 
+#### Create Game Page
+
+![Image](https://i.imgur.com/1v7pof3.png)
+
 ### **_Future Updates_**
 
 ### **_Credits_**
