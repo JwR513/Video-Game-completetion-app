@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import axios from "axios"
+import { BASE_URL } from "./globals"
 
 export default function NewGameForm(){
 const [title, setTitle]= useState('')
@@ -28,7 +29,7 @@ const handleSubmit = async(e)=>{
     completion: completion,
     developer: dev
   }
-await axios.post('http://localhost:3001/api/games', gameData)
+await axios.post(`${BASE_URL}/api/games`, gameData)
   .then(function (response) {
     console.log(response);
   })

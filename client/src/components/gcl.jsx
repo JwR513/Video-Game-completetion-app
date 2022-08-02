@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Games from "./games"
 import { useEffect, useState } from "react"
 import axios from 'axios'
+import { BASE_URL } from "./globals"
 
 export default function GameCompletionList(){
 
@@ -9,7 +10,7 @@ const [games, setGames] = useState([])
 
   useEffect(()=>{
     async function getlist(){
-      const gameInfo = await axios.get(`http://localhost:3001/api/games`)
+      const gameInfo = await axios.get(`${BASE_URL}/api/games`)
       setGames(gameInfo.data.games)
     }
     getlist()

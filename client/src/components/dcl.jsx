@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Devs from "./devs"
 import { useEffect, useState } from "react"
 import axios from 'axios'
+import { BASE_URL } from "./globals"
 
 export default function DevList(){
 
@@ -9,7 +10,7 @@ const [devs, setDevs] = useState([])
 
   useEffect(()=>{
     async function getlist(){
-      const devInfo = await axios.get(`http://localhost:3001/api/devs`)
+      const devInfo = await axios.get(`${BASE_URL}/api/devs`)
       setDevs(devInfo.data.devs)
       console.log(devInfo.data.devs)
     }

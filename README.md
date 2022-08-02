@@ -39,7 +39,7 @@
 
 ##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/J1npbB06/video-game-completetion-application)
 
-##### Project deployed url will go here
+##### Project deployed [here](https://fierce-hollows-06258.herokuapp.com/gameList)
 
 ---
 

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import axios from 'axios'
 import DevDev from "./dev"
-
+import { BASE_URL } from "./globals"
 
 
 export default function Games(props){
@@ -11,7 +11,7 @@ const [status, setStatus] =useState('')
 const deleteOne = async()=>{
 let gameId = props.game._id 
 console.log(gameId)
-const deleted = await axios.delete(`http://localhost:3001/api/deleteMe/${gameId}`)
+const deleted = await axios.delete(`${BASE_URL}/api/deleteMe/${gameId}`)
 console.log(deleted)
 }
 
@@ -24,7 +24,7 @@ const handleClick = async ()=>{
     completion: status
   }
   console.log(props.game._id)
-let res = await axios.put(`http://localhost:3001/api/games/${props.game._id}`, updated)
+let res = await axios.put(`${BASE_URL}/api/games/${props.game._id}`, updated)
 console.log(res)
 }
 
