@@ -1,6 +1,7 @@
 import { useState } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
+import { BASE_URL } from "./globals"
 
 export default function NewDevForm(){
 const [title, setTitle]= useState('')
@@ -19,7 +20,7 @@ const handleSubmit = async(e)=>{
     studioName: title,
     ceoName: genre,
   }
-await axios.post('http://localhost:3001/api/devs', devData)
+await axios.post(`${BASE_URL}/api/devs`, devData)
   .then(function (response) {
     console.log(response);
   })
